@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>ecommerce</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__top">
+        <div class="top__container container flex">
+          <div class="header__topRight">
+            <ul class="topRight__lists">
+                <li class="topRight__list"
+                  ><a href="#" class="topRight__link">USD<i class="fas fa-caret-down"></a></i
+                ></li>
+              <li class="topRight__list"
+                  ><a href="#" class="topRight__link">English<i class="fas fa-caret-down"></i></a></li
+              >
+              <li class="topRight__list"
+                  ><a href="#" class="topRight__link">Help<i class="fas fa-caret-down"></i></a></li
+              >
+            </ul>
+          </div>
+          <div class="header__topLeft">
+            <ul class="topLeft__lists">
+              <li class="topLeft__list">
+                  <a href="#" class="topLeft__link"><i class="fas fa-user"></i>Log in</a></li>
+              <li class="topLeft__list">
+                <a href="#" class="topLeft__link"><i class="fas fa-lock"></i>Register</a></li>
+              <li class="topLeft__list">
+                <a href="#" class="topLeft__link"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="bottom__container container flex">
+          <div class="header__phone"
+            ><i class="fas fa-mobile-alt"></i
+            ><p class="phone__text">2300 - 3560 - 222</p></div
+          >
+          <div class="header__logo"
+            ><img src="/images/logo.png" alt="" class="logo__img"
+          /></div>
+          <div class="header__basket">
+            <div class="basket">
+              <i class="fas fa-shopping-basket"></i>
+              <div class="basket__items">
+                <p class="items__number">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="menu">
+        <div class="menu__container container flex">
+          <div class="menu__categorize">
+            <div class="menu__category">
+                <i class="fas fa-list-ul"></i>
+                <select name="" id="" class="category__select">
+                    <option value="0">Select a category</option>
+                    <option value="1">HOT DEALS</option>
+                    <option value="2">NEW FURNITURE</option>
+                    <option value="3">FURNITURE GALLERY</option>
+                    <option value="2">LATEST BLOG</option>
+                    <option value="3">CLIENT FEEDBACK</option>
+                </select>
+                <i class="fas fa-caret-down select-caret-down"></i>
+            </div>
+            <!-- <div class="menu__searchBar"> -->
+                <form action="">
+                    <input type="text" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </form>
+            <!-- </div> -->
+          </div>
+          <div class="menu__nav">
+            <ul class="menu__lists">
+              <li class="menu__list"><a href="#" class="menu__link">HOME</a></li>
+              <li class="menu__list"><a href="#" class="menu__link">FURNITURE</a></li>
+              <li class="menu__list"><a href="#" class="menu__link">CHAIR</a></li>
+              <li class="menu__list"><a href="#" class="menu__link">TABLE</a></li>
+              <li class="menu__list"><a href="#" class="menu__link">SOFA</a></li>
+              <li class="menu__list"><a href="#" class="menu__link">BEDROOM</a></li>
+              <li class="menu__list"><a href="#" class="menu__link">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="promos container flex">
+            <div class=" ">
+                  <div class="hotDeals__title">
+                    <p class="hotDeals__text">HOT DEALS</p>
+                    <div class="hotDeals__ellipsis nav__ellipsis">
+                      <div class="ellipsis"></div>
+                      <div class="ellipsis"></div>
+                      <div class="ellipsis"></div>
+                    </div>
+                  </div>
+                  <div class="hotDeals__body">
+                    <img src="/images/hotdeals.jpg" alt="" class="hotDeals__img">
+                    <div class="hotDeals__cart cart">
+                      <i class="fas fa-shopping-basket cart__icon"></i>
+                      <p class="cart__text">ADD TO CART</p>
+                    </div>
+                    <div class="hotDeals__timer">
+                      <div class="timer">
+                        <p class="timer__text bold"><span id="days" class="timer__number"></span><br>DAYS</p>
+                      </div>
+                      <div class="timer">
+                        <p class="timer__text bold"><span id="hour" class="timer__number"></span><br>HRS</p>
+                      </div>
+                      <div class="timer">
+                        <p class="timer__text bold"><span id="min" class="timer__number"></span><br>MINS</p>
+                      </div>
+                      <div class="timer">
+                        <p class="timer__text bold"><span id="sec" class="timer__number"></span><br>SECS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hotDeals__info card__info">
+                    <p class="hotDeals__name card__title bold">Aenean Ru Bristique</p>
+                    <div class="card__rating">
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="hotDeals__buttons flex card__buttons">
+                      <ul class="card__buttonList">
+                        <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-eye"></i></a></li>
+                        <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                        <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                      </ul>
+                      <div class="card__price">
+                        <p class="price__old">$350.00</p>
+                        <p class="price__new">$300.00</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="slider">
+                <img src="/images/slider-3.jpg" alt="" class="img__slider">
+                <img src="/images/slider-1.jpg" alt="" class="img__slider">
+                <img src="/images/slider-2.jpg" alt="" class="img__slider">
+
+                <div class="slider__text"><p class="slider__title">INDOOR <span class="slider__furniture bold">FURNITURE</span></p>
+                <p class="slider__desc">SAVE UP TO 50% OF ALL FURNITURE</p>
+                    <div class="slider__shop">SHOP NOW</div>
+            </div>
+                <div class="slider__buttons">
+                    <div class="slider__leftButton" onclick="moveSlide(-1)">&#10094;</div>
+                    <div class="slider__rightButton" onclick="moveSlide(1)" >&#10095;</div>
+                </div>
+
+            </div>
+      </div>
+      <div class="services container">
+        <ul class="services__lists">
+          <li class="services__list">
+            <div class="service">
+              <div class="service__box">
+                <p class="service__text"><span class="bold">FREE SHIPPING</span><br>ALL ORDER</p>
+              </div>
+              <div class="service__icon outer">
+                <div class="inner"><i class="fas fa-truck fa-flip-horizontal"></i></div>
+              </div>
+              </div>
+          </li>
+          <li class="services__list">
+            <div class="service">
+              <div class="service__box">
+                <p class="service__text"><span class="bold">24/7 CUSTOMER</span><br>SUPPORT</p>
+              </div>
+              <div class="service__icon outer">
+                <div class="inner"><i class="fas fa-headphones-alt"></i></div>
+              </div>
+            </div>
+          </li>
+          <li class="services__list">
+            <div class="service">
+              <div class="service__box">
+                <p class="service__text"><span class="bold">MONEY BACK</span><br>GUARANTEE</p>
+              </div>
+              <div class="service__icon outer">
+                <div class="inner"><i class="fas fa-reply-all"></i></div>
+              </div>
+            </div>
+          </li>
+          <li class="services__list">
+            <div class="service">
+              <div class="service__box">
+                <p class="service__text"><span class="bold">MEMBER DISCOUNT</span><br>FIRST ORDER</p>
+              </div>
+              <div class="service__icon outer">
+                <div class="inner"><i class="fas fa-bullhorn"></i></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="ads container">
+        <img src="/images/ad-1.jpg" alt="" class="ads__img">
+        <div class="ads__right">
+          <img src="/images/ad-2.jpg" alt="" class="ads__img">
+          <img src="/images/ad-3.jpg" alt="" class="ads__img">
+        </div>
+      </div>
+      <div class="new container">
+        <div class="new__top">
+            <div class="new__title">
+              <div class="new__text">NEW FURNITURE
+              <ul class="new__menus">
+                <li class="new__menu"><a href="#" class="new__link">Bed</a></li>
+                <li class="new__menu"><a href="#" class="new__link">Chair</a></li>
+                <li class="new__menu"><a href="#" class="new__link">Sofa</a></li>
+                <li class="new__menu"><a href="#" class="new__link">Table</a></li>
+                <li class="new__menu"><a href="#" class="new__link">Dining</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ellipsis__wrapper nav__ellipsis">
+            <div class="ellipsis"></div>
+            <div class="ellipsis"></div>
+            <div class="ellipsis"></div>
+          </div>
+       </div>
+       <div class="new__card">
+        <ul class="card__lists">
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <div class="sale">sale</div>
+                <img src="/images/prod-5.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+               <p class="card__title bold">Aenean Ru Bristique</p>
+               <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+               </div>
+               <div class="card__buttons flex">
+                 <ul class="card__buttonList">
+                   <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                   <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                 </ul>
+                  <div class="card__price">
+                    <p class="price__old"></p>
+                    <p class="price__new bold">$30.00</p>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </li>
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <!-- <div class="sale">sale</div> -->
+                <img src="/images/prod-4.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+                <p class="card__title bold">Aenean Ru Bristique</p>
+                <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="card__buttons flex">
+                  <ul class="card__buttonList">
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                  </ul>
+                  <div class="card__price">
+                    <p class="price__old"></p>
+                    <p class="price__new bold">$15.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <div class="sale">sale</div>
+                <img src="/images/prod-8.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+                <p class="card__title bold">Aenean Ru Bristique</p>
+                <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="card__buttons flex">
+                  <ul class="card__buttonList">
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                  </ul>
+                  <div class="card__price">
+                    <p class="price__old">$35.00</p>
+                    <p class="price__new bold">$25.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <div class="sale">sale</div>
+                <img src="/images/prod-7.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+                <p class="card__title bold">Aenean Ru Bristique</p>
+                <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="card__buttons flex">
+                  <ul class="card__buttonList">
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                  </ul>
+                  <div class="card__price">
+                    <p class="price__old">$20.00</p>
+                    <p class="price__new bold">$15.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <!-- <div class="sale">sale</div> -->
+                <img src="/images/prod-6.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+                <p class="card__title bold">Aenean Ru Bristique</p>
+                <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="card__buttons flex">
+                  <ul class="card__buttonList">
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                  </ul>
+                  <div class="card__price">
+                    <p class="price__old"></p>
+                    <p class="price__new bold">$15.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <div class="sale">sale</div>
+                <img src="/images/prod-1.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+                <p class="card__title bold">Aenean Ru Bristique</p>
+                <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="card__buttons flex">
+                  <ul class="card__buttonList">
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                  </ul>
+                  <div class="card__price">
+                    <p class="price__old"></p>
+                    <p class="price__new bold">$15.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <div class="sale">sale</div>
+                <img src="/images/prod-2.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+                <p class="card__title bold">Aenean Ru Bristique</p>
+                <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="card__buttons flex">
+                  <ul class="card__buttonList">
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                  </ul>
+                  <div class="card__price">
+                    <p class="price__old">$35.00</p>
+                    <p class="price__new bold">$25.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card__list">
+            <div class="card">
+              <div class="card__img">
+                <!-- <div class="sale">sale</div> -->
+                <img src="/images/prod-3.jpg" alt="" class="img__icon">
+                <div class="card__onHoverMenu">
+                  <p class="card__text cart__text"><a href="#" class="onHoverMenu__link cart view">Quick View</a></p>
+                  <p class="cart__text"><a href="#" class="onHoverMenu__link cart"><i
+                        class="fas fa-shopping-basket cart__icon"></i>ADD TO CART</a></p>
+                </div>
+              </div>
+              <div class="card__info">
+                <p class="card__title bold">Aenean Ru Bristique</p>
+                <div class="card__rating">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="card__buttons flex">
+                  <ul class="card__buttonList">
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="far fa-heart"></i></a></li>
+                    <li class="card__button"><a href="#" class="card__buttonLink"><i class="fas fa-exchange-alt"></i></a></li>
+                  </ul>
+                  <div class="card__price">
+                    <p class="price__old">$20.00</p>
+                    <p class="price__new bold">$15.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+
+
+
+       </div>
+      </div>
+      <div class="furniture container">
+        .furnitureGallery
+      </div>
+      <div class="blog container">
+        <div class="blog__top new__top">
+          <div class="blog__title new__text">LATEST BLOG
+            </div>
+            <div class="ellipsis__wrapper nav__ellipsis">
+              <div class="ellipsis"></div>
+              <div class="ellipsis"></div>
+              <div class="ellipsis"></div>
+            </div>
+          </div>
+         <ul class="blog__posts">
+           <li class="blog__post">
+            <div class="post">
+              <img src="images/prod-8.jpg" alt="" class="post__img">
+              <div class="post__info">
+                <div class="post__infoDetails">
+                  <p class="post__date"><i class="fas fa-calendar-alt"></i> 15 JAN 2016</p>
+                  <p class="post__comment"><i class="fas fa-comments"></i>4 Comments</p>
+                </div>
+                <p class="post__title">Products That Fight Static</p>
+                <p class="post__text">
+                  Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam
+                  euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare
+                  enim.
+                </p>
+                <p class="post__more"><a href="#" class="post__link">Read More</a></p>
+              </div>
+            </div>
+           </li>
+          <li class="blog__post">
+            <div class="post">
+              <img src="images/prod-8.jpg" alt="" class="post__img">
+              <div class="post__info">
+                <div class="post__infoDetails">
+                  <p class="post__date"><i class="fas fa-calendar-alt"></i> 15 JAN 2016</p>
+                  <p class="post__comment"><i class="fas fa-comments"></i>4 Comments</p>
+                </div>
+                <p class="post__title">Products That Fight Static</p>
+                <p class="post__text">
+                  Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam
+                  euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare
+                  enim.
+                </p>
+                <p class="post__more"><a href="#" class="post__link">Read More</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="blog__post">
+            <div class="post">
+              <img src="images/prod-8.jpg" alt="" class="post__img">
+              <div class="post__info">
+                <div class="post__infoDetails">
+                  <p class="post__date"><i class="fas fa-calendar-alt"></i> 15 JAN 2016</p>
+                  <p class="post__comment"><i class="fas fa-comments"></i>4 Comments</p>
+                </div>
+                <p class="post__title">Products That Fight Static</p>
+                <p class="post__text">
+                  Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam
+                  euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare
+                  enim.
+                </p>
+                <p class="post__more"><a href="#" class="post__link">Read More</a></p>
+              </div>
+            </div>
+          </li>
+         </ul>
+
+          <div class="blog__slider">
+              <div class="blog__buttonLeft">&#10094;
+                <!-- <span class="slider__text">&#10094;</span> -->
+              </div>
+                <ul class="blog__sliderLists">
+                  <li class="blog__sliderList"><img src="images/brand-1.png" alt="" class="blog__sliderImg"></li>
+                  <li class="blog__sliderList"><img src="images/brand-2.png" alt="" class="blog__sliderImg"></li>
+                  <li class="blog__sliderList"> <img src="images/brand-3.png" alt="" class="blog__sliderImg"></li>
+                  <li class="blog__sliderList"><img src="images/brand-4.png" alt="" class="blog__sliderImg"></li>
+                  <li class="blog__sliderList"><img src="images/brand-5.png" alt="" class="blog__sliderImg"></li>
+                </ul>
+              <div class="blog__buttonRight">
+                <span class="slider__text">&#10095;</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container"> </div>
+    </footer>
+    <script type="text/javascript" src="/js/script.js"></script>
+  </body>
+</html>
