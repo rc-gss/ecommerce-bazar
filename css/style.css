@@ -300,8 +300,6 @@ input[type="text"] {
   height: 50px;
   background-color: #2a2a2a;
   padding: 0px 24px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .hotDeals__text {
@@ -551,8 +549,7 @@ input[type="text"] {
 .services__container {
 }
 .services__lists {
-  display: flex;
-  justify-content: space-between;
+
 }
 .services__list {
 }
@@ -634,17 +631,13 @@ input[type="text"] {
 /* ads */
 .ads {
   margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .ads__img {
 }
 
 .ads__right {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 /* new furniture */
@@ -653,8 +646,6 @@ input[type="text"] {
 }
 
 .new__top {
-  display: flex;
-  justify-content: space-between;
   align-content: flex-end;
 }
 .new__title {
@@ -722,9 +713,7 @@ input[type="text"] {
 .new__card {
 }
 .card__lists {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .card__list {
   margin-top: 30px;
@@ -828,8 +817,6 @@ input[type="text"] {
 .blog__title {
 }
 .blog__posts {
-  display: flex;
-  justify-content: space-between;
   margin-top: 30px;
 }
 .blog__post {
@@ -844,7 +831,7 @@ input[type="text"] {
   color: #d58e32;
 }
 
-.post:hover .post__more {
+.post:hover .post__link {
   background-color: #d58e32;
 }
 
@@ -862,8 +849,6 @@ input[type="text"] {
 }
 .post__infoDetails {
   margin: 27px 20px 0px;
-  display: flex;
-  justify-content: space-between;
 }
 .post__date {
   color: #676767;
@@ -912,13 +897,71 @@ input[type="text"] {
   border-bottom: 2px solid gray;
 }
 
-.blog__buttonLeft {
+.blog__link {
+  background-color: #2a2a2a;
+  padding: 41px 14px;
+  width: 33px;
 }
-.blog__buttonRight {
+
+.blog__link:hover{
+  color: #e0a38e;
 }
+
+
 .blog__sliderLists {
 }
 .blog__sliderList {
+  border: 1px solid #cccccc;
+  margin-right: 30px;
 }
+
+.blog__sliderList:last-child {
+  margin-right: 0px;
+}
+
 .blog__sliderImg {
+}
+
+/* client feedback*/
+.client{}
+.client__top{}
+.client__title{}
+
+.client__body{    
+  text-align: center;
+  padding: 30px 100px 60px;
+}
+.fa-quote-right{
+  font-size: 24px;
+    line-height: 0.65;
+}
+.client__bodyText{
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+.profile{
+display: inline-flex;
+margin-top: 35px;
+}
+.profile__img{
+  width:60px;
+  height: 52px; 
+  border-radius: 8px;
+}
+.img__icon{
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile__info{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  /*margin: 10px 20px;*/
+}
+.profile__name{
+  font-weight: 400;
+  
 }
